@@ -26,6 +26,6 @@ class MyControllerTest {
         String expectedResponse = "お名前";
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString(expectedResponse)));
+                .andExpect(content().string(expectedResponse));
     }
 }
