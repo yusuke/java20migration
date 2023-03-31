@@ -12,25 +12,26 @@ repositories {
 }
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(20)
+        languageVersion = JavaLanguageVersion.of(8)
     }
 }
-
-compileJava{
-    options.compilerArgs += ["--enable-preview"]
-}
-compileTestJava {
-    options.compilerArgs += ["--enable-preview"]
-}
-test {
-    jvmArgs '--enable-preview'
-    useJUnitPlatform()
-}
+//
+//compileJava{
+//    options.compilerArgs += ["--enable-preview"]
+//}
+//compileTestJava {
+//    options.compilerArgs += ["--enable-preview"]
+//}
+//test {
+//    jvmArgs '--enable-preview'
+//    useJUnitPlatform()
+//}
 
 
 dependencies {
 //    implementation 'mysql:mysql-connector-java:8.0.32'
 
+    //noinspection VulnerableLibrariesLocal
     implementation('com.h2database:h2:2.1.214')
     implementation('org.springframework.boot:spring-boot-starter-jdbc')
     implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
