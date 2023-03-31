@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="gitlab-config">
+    <option name="stateMap">
+      <map>
+        <entry key="java20migration">
+          <value>
+            <GitlabConfigState>
+              <option name="pipelineSize" value="5" />
+              <option name="useGitLabCom" value="true" />
+              <option name="commits">
+                <set>
+                  <option value="COMMITS_BY_ME" />
+                  <option value="COMMITS_BY_OTHERS" />
+                  <option value="NON_COMMIT" />
+                </set>
+              </option>
+              <option name="results">
+                <set>
+                  <option value="SUCCESS" />
+                  <option value="FAILURE" />
+                </set>
+              </option>
+            </GitlabConfigState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

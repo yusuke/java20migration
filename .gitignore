@@ -27,3 +27,4 @@ build/
 .gradle/
 
 h2/
+out/
