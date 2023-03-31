@@ -4,19 +4,10 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
-public class Fortune {
+public record Fortune(String お名前) {
 
-    private final String お名前;
-
-    public Fortune(String お名前) {
-        this.お名前 = お名前;
-    }
-
-    public String getお名前() {
-        return お名前;
-    }
-
-    private static List<String> 占いバリエーション = Arrays.asList("今日の運勢は最悪です。\n" +
+    private static List<String> 占いバリエーション = Arrays.asList(
+            "今日の運勢は最悪です。\n" +
                     "家に帰りましょう。\n",
             "今日あなたは世界一ラッキーです。\n" +
                     "宝くじか馬券を買って帰りましょう。\n",
