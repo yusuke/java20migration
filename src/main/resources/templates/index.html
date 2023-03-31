@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/占う" method="post">
+    <label for="お名前">お名前:</label><input id="お名前" name="お名前" th:value="${name}"/>
+    <input type="submit" value="占う">
+</form>
+<div th:if="${fortune != null}">
+    <pre th:text="${fortune['占い結果']}"></pre>
+</div>
+
+</body>
+</html>
